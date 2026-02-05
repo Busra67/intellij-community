@@ -1,0 +1,151 @@
+f:org.jetbrains.icons.impl.intellij.IntelliJIconManager
+- org.jetbrains.icons.impl.DefaultIconManager
+- sf:Companion:org.jetbrains.icons.impl.intellij.IntelliJIconManager$Companion
+- <init>():V
+- addSwingLayer(org.jetbrains.icons.design.IconDesigner,javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- buildCustomSerializers(kotlinx.serialization.modules.SerializersModuleBuilder):V
+- icon(kotlin.jvm.functions.Function1):org.jetbrains.icons.Icon
+- markDeferredIconUnused(org.jetbrains.icons.IconIdentifier):V
+- sendDeferredNotifications(org.jetbrains.icons.IconIdentifier,org.jetbrains.icons.Icon,kotlin.coroutines.Continuation):java.lang.Object
+- toNewIcon(javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):org.jetbrains.icons.Icon
+- toSwingIcon(org.jetbrains.icons.Icon,org.jetbrains.icons.scale.IconScale):javax.swing.Icon
+f:org.jetbrains.icons.impl.intellij.IntelliJIconManager$Companion
+- f:activate():V
+f:org.jetbrains.icons.impl.intellij.ModuleIconIdentifier
+- org.jetbrains.icons.IconIdentifier
+- sf:Companion:org.jetbrains.icons.impl.intellij.ModuleIconIdentifier$Companion
+- <init>(java.lang.String,java.lang.String,org.jetbrains.icons.IconIdentifier):V
+- equals(java.lang.Object):Z
+- f:getModuleId():java.lang.String
+- f:getPluginId():java.lang.String
+- f:getUniqueId():org.jetbrains.icons.IconIdentifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.intellij.ModuleIconIdentifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.intellij.ModuleIconIdentifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.intellij.ModuleIconIdentifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.intellij.ModuleIconIdentifier):V
+f:org.jetbrains.icons.impl.intellij.ModuleIconIdentifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation
+- org.jetbrains.icons.ImageResourceLocation
+- sf:Companion:org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation$Companion
+- f:moduleId:java.lang.String
+- f:path:java.lang.String
+- f:pluginId:java.lang.String
+- <init>(java.lang.String,java.lang.String,java.lang.String):V
+- equals(java.lang.Object):Z
+- hashCode():I
+bf:org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation):V
+f:org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation$Companion
+- f:fromClassLoader(java.lang.String,java.lang.ClassLoader):org.jetbrains.icons.ImageResourceLocation
+- f:serializer():kotlinx.serialization.KSerializer
+a:org.jetbrains.icons.impl.intellij.custom.CustomLegacyIconSerializer
+- org.jetbrains.icons.impl.intellij.custom.CustomSerializableRegistration
+- <init>(kotlin.reflect.KClass):V
+a:org.jetbrains.icons.impl.intellij.custom.CustomSerializableRegistration
+- <init>(kotlin.reflect.KClass):V
+- a:createSerializer():kotlinx.serialization.KSerializer
+a:org.jetbrains.icons.impl.intellij.custom.CustomSerializableRegistration$Companion
+- <init>(kotlin.reflect.KClass,java.lang.String):V
+- f:getEP_NAME():com.intellij.openapi.extensions.ExtensionPointName
+- onRegistration(org.jetbrains.icons.impl.intellij.custom.CustomSerializableRegistration,kotlinx.serialization.KSerializer):V
+- f:registerSerializersTo(kotlinx.serialization.modules.SerializersModuleBuilder):V
+f:org.jetbrains.icons.impl.intellij.design.IntelliJIconDesigner
+- org.jetbrains.icons.impl.design.DefaultIconDesigner
+- <init>():V
+- f:addSwingLayer(javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- createNestedDesigner():org.jetbrains.icons.impl.design.DefaultIconDesigner
+- image(java.lang.String,java.lang.ClassLoader,org.jetbrains.icons.modifiers.IconModifier):V
+f:org.jetbrains.icons.impl.intellij.rendering.IntelliJIconRendererManager
+- org.jetbrains.icons.impl.rendering.DefaultIconRendererManager
+- <init>():V
+- createRenderer(org.jetbrains.icons.layers.IconLayer,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- createRenderingContext(org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.RenderingContext
+- createUpdateFlow(kotlinx.coroutines.CoroutineScope,kotlin.jvm.functions.Function1):org.jetbrains.icons.rendering.MutableIconUpdateFlow
+f:org.jetbrains.icons.impl.intellij.rendering.SwingIcon
+- javax.swing.Icon
+- <init>(org.jetbrains.icons.Icon,org.jetbrains.icons.scale.IconScale):V
+- b:<init>(org.jetbrains.icons.Icon,org.jetbrains.icons.scale.IconScale,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- f:getIcon():org.jetbrains.icons.Icon
+- getIconHeight():I
+- getIconWidth():I
+- f:getScale():org.jetbrains.icons.scale.IconScale
+- paintIcon(java.awt.Component,java.awt.Graphics,I,I):V
+f:org.jetbrains.icons.impl.intellij.rendering.SwingIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.BaseImageIconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.SwingIconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):V
+- getImage():org.jetbrains.icons.rendering.ImageResource
+- getLayer():org.jetbrains.icons.impl.layers.SwingIconLayer
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+- setImage(org.jetbrains.icons.rendering.ImageResource):V
+- setLayout(org.jetbrains.icons.impl.rendering.layers.LayerLayout):V
+f:org.jetbrains.icons.impl.intellij.rendering.SwingLayerPaintingContext
+- <init>(java.awt.Component,java.awt.Graphics,I,I,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.jetbrains.icons.filters.ColorFilter,org.jetbrains.icons.rendering.ScalingContext):V
+- b:<init>(java.awt.Component,java.awt.Graphics,I,I,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.jetbrains.icons.filters.ColorFilter,org.jetbrains.icons.rendering.ScalingContext,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- createNestedLayer(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,F,org.jetbrains.icons.filters.ColorFilter):org.jetbrains.icons.rendering.LayerPaintingContext
+- drawCircle(org.jetbrains.icons.design.Color,I,I,F,F,org.jetbrains.icons.rendering.DrawMode):V
+- drawImage(org.jetbrains.icons.rendering.ImageResource,I,I,java.lang.Integer,java.lang.Integer,I,I,java.lang.Integer,java.lang.Integer,F,org.jetbrains.icons.filters.ColorFilter):V
+- drawRect(org.jetbrains.icons.design.Color,I,I,I,I,F,org.jetbrains.icons.rendering.DrawMode):V
+- f:getC():java.awt.Component
+- f:getG():java.awt.Graphics
+- getOffsetX():I
+- getOffsetY():I
+- getScaling():org.jetbrains.icons.rendering.ScalingContext
+- getSlotHeight():java.lang.Integer
+- getSlotWidth():java.lang.Integer
+- f:getX():I
+- f:getY():I
+f:org.jetbrains.icons.impl.intellij.rendering.images.AwtImageResource
+- org.jetbrains.icons.impl.rendering.CachedGPUImageResourceHolder
+- org.jetbrains.icons.rendering.ImageResource
+- <init>(java.awt.Image):V
+- getBandOffsetsToSRGB():I[]
+- getHeight():java.lang.Integer
+- f:getImage():java.awt.Image
+- getRGBPixels():I[]
+- getWidth():java.lang.Integer
+- readPrefetchedPixel(I[],I,I):java.lang.Integer
+f:org.jetbrains.icons.impl.intellij.rendering.images.AwtImageResourceKt
+- sf:awtImage(org.jetbrains.icons.rendering.BitmapImageResource):java.awt.Image
+f:org.jetbrains.icons.impl.intellij.rendering.images.IntelliJImageResourceProvider
+- org.jetbrains.icons.impl.rendering.DefaultImageResourceProvider
+- <init>():V
+- fromSwingIcon(javax.swing.Icon,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- loadImage(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+f:org.jetbrains.icons.impl.intellij.rendering.images.ModuleImageResourceLoader
+- org.jetbrains.icons.rendering.ImageResourceLoader
+- <init>():V
+- loadImage(org.jetbrains.icons.impl.intellij.ModuleImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+f:org.jetbrains.icons.impl.intellij.serializers.CachedImageIconSerializer
+- kotlinx.serialization.KSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.intellij.serializers.CachedImageIconSerializer
+- deserialize(kotlinx.serialization.encoding.Decoder):com.intellij.ui.icons.CachedImageIcon
+- getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- serialize(kotlinx.serialization.encoding.Encoder,com.intellij.ui.icons.CachedImageIcon):V
+f:org.jetbrains.icons.impl.intellij.serializers.CustomCachedImageIconSerializer
+- org.jetbrains.icons.impl.intellij.custom.CustomLegacyIconSerializer
+- <init>():V
+- createSerializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder
+- sf:Companion:org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder$Companion
+- <init>(B[]):V
+- f:getData():B[]
+bf:org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder):V
+f:org.jetbrains.icons.impl.intellij.serializers.SerializedIconDataHolder$Companion
+- f:serializer():kotlinx.serialization.KSerializer

@@ -1,0 +1,51 @@
+// Copyright 2000-2026 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
+
+package org.jetbrains.jewel.intui.standalone.icon
+
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.FlowCollector
+import org.jetbrains.icons.Icon
+import org.jetbrains.icons.impl.rendering.CoroutineBasedMutableIconUpdateFlow
+import org.jetbrains.icons.impl.rendering.DefaultIconRendererManager
+import org.jetbrains.icons.impl.rendering.DefaultImageModifiers
+import org.jetbrains.icons.impl.rendering.DefaultRenderingContext
+import org.jetbrains.icons.rendering.ImageModifiers
+import org.jetbrains.icons.rendering.MutableIconUpdateFlow
+import org.jetbrains.icons.rendering.RenderingContext
+import org.jetbrains.jewel.ui.icon.ComposeImageResourceProvider
+
+internal class StandaloneIconRendererManager : DefaultIconRendererManager() {
+    private val imageProvider = ComposeImageResourceProvider()
+
+    override fun createUpdateFlow(scope: CoroutineScope?, updateCallback: (Int) -> Unit): MutableIconUpdateFlow {
+        if (scope == null) return EmptyMutableIconUpdateFlow()
+        return CoroutineBasedMutableIconUpdateFlow(scope, updateCallback)
+    }
+
+    override fun createRenderingContext(
+        updateFlow: MutableIconUpdateFlow,
+        defaultImageModifiers: ImageModifiers?,
+    ): RenderingContext {
+        val knownModifiers = defaultImageModifiers as? DefaultImageModifiers
+        return DefaultRenderingContext(updateFlow, knownModifiers, imageProvider)
+    }
+}
+
+private class EmptyMutableIconUpdateFlow : MutableIconUpdateFlow {
+    override fun triggerUpdate() {
+        // Do nothing
+    }
+
+    override fun triggerDelayedUpdate(delay: Long) {
+        // Do nothing
+    }
+
+    override suspend fun collect(collector: FlowCollector<Int>) {
+        // Do nothing
+    }
+
+    override fun collectDynamic(flow: Flow<Icon>, handler: (Icon) -> Unit) {
+        // Do nothing
+    }
+}

@@ -1,0 +1,61 @@
+c:org.jetbrains.icons.rendering.Dimensions
+- <init>(I,I):V
+- f:copy(I,I):org.jetbrains.icons.rendering.Dimensions
+- bs:copy$default(org.jetbrains.icons.rendering.Dimensions,I,I,I,java.lang.Object):org.jetbrains.icons.rendering.Dimensions
+- equals(java.lang.Object):Z
+- f:getHeight():I
+- f:getWidth():I
+- hashCode():I
+org.jetbrains.icons.rendering.GenericImageResourceLoader
+- a:loadGenericImage(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- bs:loadGenericImage$default(org.jetbrains.icons.rendering.GenericImageResourceLoader,org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.ImageResource
+org.jetbrains.icons.rendering.IconRenderer
+- a:getIcon():org.jetbrains.icons.Icon
+org.jetbrains.icons.rendering.IconRendererManager
+- sf:Companion:org.jetbrains.icons.rendering.IconRendererManager$Companion
+- a:createRenderer(org.jetbrains.icons.Icon,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.rendering.IconRenderer
+- a:createRenderingContext(org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.RenderingContext
+- bs:createRenderingContext$default(org.jetbrains.icons.rendering.IconRendererManager,org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.RenderingContext
+- a:createUpdateFlow(kotlinx.coroutines.CoroutineScope,kotlin.jvm.functions.Function1):org.jetbrains.icons.rendering.MutableIconUpdateFlow
+- s:getInstance():org.jetbrains.icons.rendering.IconRendererManager
+f:org.jetbrains.icons.rendering.IconRendererManager$Companion
+- f:activate(org.jetbrains.icons.rendering.IconRendererManager):V
+- f:createRenderingContext(org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.RenderingContext
+- bs:createRenderingContext$default(org.jetbrains.icons.rendering.IconRendererManager$Companion,org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.RenderingContext
+- f:createUpdateFlow(kotlinx.coroutines.CoroutineScope,kotlin.jvm.functions.Function1):org.jetbrains.icons.rendering.MutableIconUpdateFlow
+- f:getInstance():org.jetbrains.icons.rendering.IconRendererManager
+f:org.jetbrains.icons.rendering.IconRendererManagerKt
+- sf:createRenderer(org.jetbrains.icons.Icon,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.rendering.IconRenderer
+org.jetbrains.icons.rendering.ImageModifiers
+- a:getColorFilter():org.jetbrains.icons.filters.ColorFilter
+- a:getSvgPatcher():org.jetbrains.icons.patchers.SvgPatcher
+org.jetbrains.icons.rendering.ImageResource
+- sf:Companion:org.jetbrains.icons.rendering.ImageResource$Companion
+- a:getHeight():java.lang.Integer
+- a:getWidth():java.lang.Integer
+f:org.jetbrains.icons.rendering.ImageResource$Companion
+org.jetbrains.icons.rendering.ImageResourceLoader
+- org.jetbrains.icons.rendering.GenericImageResourceLoader
+- loadGenericImage(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- a:loadImage(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- bs:loadImage$default(org.jetbrains.icons.rendering.ImageResourceLoader,org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.ImageResource
+org.jetbrains.icons.rendering.LoadingStrategy
+f:org.jetbrains.icons.rendering.LoadingStrategy$BlockThread
+- org.jetbrains.icons.rendering.LoadingStrategy
+- sf:INSTANCE:org.jetbrains.icons.rendering.LoadingStrategy$BlockThread
+f:org.jetbrains.icons.rendering.LoadingStrategy$RenderBlank
+- org.jetbrains.icons.rendering.LoadingStrategy
+- <init>(org.jetbrains.icons.rendering.Dimensions):V
+- f:getDimensions():org.jetbrains.icons.rendering.Dimensions
+f:org.jetbrains.icons.rendering.LoadingStrategy$RenderPlaceholder
+- org.jetbrains.icons.rendering.LoadingStrategy
+- <init>(org.jetbrains.icons.rendering.IconRenderer):V
+- f:getPlaceHolder():org.jetbrains.icons.rendering.IconRenderer
+org.jetbrains.icons.rendering.RenderingContext
+- sf:Companion:org.jetbrains.icons.rendering.RenderingContext$Companion
+- a:getDefaultImageModifiers():org.jetbrains.icons.rendering.ImageModifiers
+- a:getUpdateFlow():org.jetbrains.icons.rendering.MutableIconUpdateFlow
+- a:imageResource(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- bs:imageResource$default(org.jetbrains.icons.rendering.RenderingContext,org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.ImageResource
+f:org.jetbrains.icons.rendering.RenderingContext$Companion
+- f:getEmpty():org.jetbrains.icons.rendering.RenderingContext

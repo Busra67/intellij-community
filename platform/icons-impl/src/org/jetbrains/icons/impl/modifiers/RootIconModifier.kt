@@ -1,0 +1,12 @@
+// Copyright 2000-2026 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
+package org.jetbrains.icons.impl.modifiers
+
+import kotlinx.serialization.Serializable
+import org.jetbrains.icons.impl.rendering.layers.LayerLayout
+
+@Serializable
+object RootIconModifier : ApplyableIconModifier {
+    override fun applyTo(layout: LayerLayout): LayerLayout {
+        return layout
+    }
+}

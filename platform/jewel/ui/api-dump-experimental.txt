@@ -101,6 +101,25 @@ f:org.jetbrains.jewel.ui.component.search.SpeedSearchableTreeKt
 - *sf:SpeedSearchableTree(org.jetbrains.jewel.ui.component.SpeedSearchScope,org.jetbrains.jewel.foundation.lazy.tree.Tree,kotlin.jvm.functions.Function1,androidx.compose.ui.Modifier,org.jetbrains.jewel.foundation.lazy.tree.TreeState,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,org.jetbrains.jewel.foundation.lazy.tree.KeyActions,org.jetbrains.jewel.ui.component.styling.LazyTreeStyle,kotlinx.coroutines.CoroutineDispatcher,kotlin.jvm.functions.Function4,androidx.compose.runtime.Composer,I,I,I):V
 f:org.jetbrains.jewel.ui.component.styling.IconButtonStylingKt
 - *sf:getLocalTransparentIconButtonStyle():androidx.compose.runtime.ProvidableCompositionLocal
+f:org.jetbrains.jewel.ui.icon.IconKeyKt
+- *sf:iconKey(org.jetbrains.icons.design.IconDesigner,org.jetbrains.jewel.ui.icon.IconKey,org.jetbrains.icons.modifiers.IconModifier):V
+- *bs:iconKey$default(org.jetbrains.icons.design.IconDesigner,org.jetbrains.jewel.ui.icon.IconKey,org.jetbrains.icons.modifiers.IconModifier,I,java.lang.Object):V
+f:org.jetbrains.jewel.ui.icon.IconUtilsKt
+- *sf:badge-3IgeMak(org.jetbrains.icons.design.IconDesigner,J,org.jetbrains.icons.design.Shape,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.modifiers.IconModifier):V
+- *bs:badge-3IgeMak$default(org.jetbrains.icons.design.IconDesigner,J,org.jetbrains.icons.design.Shape,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.modifiers.IconModifier,I,java.lang.Object):V
+- *sf:circle-0680j_4(F):org.jetbrains.icons.design.Circle
+- *sf:fillArea-YgX7TsA(F,F):org.jetbrains.icons.scale.FillAreaScale
+- *sf:fitArea-YgX7TsA(F,F):org.jetbrains.icons.scale.FitAreaScale
+- *sf:rectangle-YgX7TsA(F,F):org.jetbrains.icons.design.Rectangle
+- *sf:stroke-4WTKRHQ(org.jetbrains.icons.modifiers.IconModifier,J):org.jetbrains.icons.modifiers.IconModifier
+- *sf:tintColor-4MyTwCo(org.jetbrains.icons.modifiers.IconModifier,J,I):org.jetbrains.icons.modifiers.IconModifier
+- *bs:tintColor-4MyTwCo$default(org.jetbrains.icons.modifiers.IconModifier,J,I,I,java.lang.Object):org.jetbrains.icons.modifiers.IconModifier
+- *sf:toCompose(org.jetbrains.icons.design.BlendMode):I
+- *sf:toCompose(org.jetbrains.icons.design.Color):J
+- *sf:toCompose(org.jetbrains.icons.filters.ColorFilter):androidx.compose.ui.graphics.ColorFilter
+- *sf:toIconsBlendMode-s9anfk8(I):org.jetbrains.icons.design.BlendMode
+- *sf:toIconsColor-8_81llA(J):org.jetbrains.icons.design.Color
+- *sf:toIconsDp-0680j_4(F):org.jetbrains.icons.design.DisplayPoint
 *f:org.jetbrains.jewel.ui.painter.hints.EmbeddedToInlineCssStyleSvgPatchHint
 - org.jetbrains.jewel.ui.painter.PainterSvgPatchHint
 - sf:$stable:I

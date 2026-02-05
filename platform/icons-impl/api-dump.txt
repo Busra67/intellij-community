@@ -1,0 +1,923 @@
+c:org.jetbrains.icons.impl.DefaultDeferredIcon
+- org.jetbrains.icons.DeferredIcon
+- sf:Companion:org.jetbrains.icons.impl.DefaultDeferredIcon$Companion
+- b:<init>(I,org.jetbrains.icons.IconIdentifier,org.jetbrains.icons.Icon,kotlinx.serialization.internal.SerializationConstructorMarker):V
+- <init>(org.jetbrains.icons.IconIdentifier,org.jetbrains.icons.Icon):V
+- getId():org.jetbrains.icons.IconIdentifier
+- getPlaceholder():org.jetbrains.icons.Icon
+- setPlaceholder(org.jetbrains.icons.Icon):V
+- bsf:write$Self(org.jetbrains.icons.impl.DefaultDeferredIcon,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):V
+bf:org.jetbrains.icons.impl.DefaultDeferredIcon$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.DefaultDeferredIcon$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.DefaultDeferredIcon
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.DefaultDeferredIcon):V
+f:org.jetbrains.icons.impl.DefaultDeferredIcon$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.DefaultDeferredIconSerializer
+- kotlinx.serialization.KSerializer
+- <init>(org.jetbrains.icons.impl.DefaultIconManager):V
+- deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.DefaultDeferredIcon
+- getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.DefaultDeferredIcon):V
+a:org.jetbrains.icons.impl.DefaultIconManager
+- sf:Companion:org.jetbrains.icons.impl.DefaultIconManager$Companion
+- <init>():V
+- addSwingLayer(org.jetbrains.icons.design.IconDesigner,javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- buildCustomSerializers(kotlinx.serialization.modules.SerializersModuleBuilder):V
+- colorFilterFactory():org.jetbrains.icons.filters.ColorFilterFactory
+- p:createDeferredIconResolver(org.jetbrains.icons.IconIdentifier,java.lang.ref.WeakReference,kotlin.jvm.functions.Function1):org.jetbrains.icons.impl.DeferredIconResolver
+- deferredIcon(org.jetbrains.icons.Icon,java.lang.String,java.lang.ClassLoader,kotlin.jvm.functions.Function1):org.jetbrains.icons.Icon
+- forceEvaluation(org.jetbrains.icons.DeferredIcon,kotlin.coroutines.Continuation):java.lang.Object
+- p:generateDeferredIconIdentifier(java.lang.String,java.lang.ClassLoader):org.jetbrains.icons.IconIdentifier
+- bs:generateDeferredIconIdentifier$default(org.jetbrains.icons.impl.DefaultIconManager,java.lang.String,java.lang.ClassLoader,I,java.lang.Object):org.jetbrains.icons.IconIdentifier
+- pa:getResolverService():org.jetbrains.icons.impl.DeferredIconResolverService
+- getSerializersModule():kotlinx.serialization.modules.SerializersModule
+- a:markDeferredIconUnused(org.jetbrains.icons.IconIdentifier):V
+- modifiersFactory():org.jetbrains.icons.modifiers.ModifiersFactory
+- f:scheduleEvaluation(org.jetbrains.icons.DeferredIcon):V
+- a:sendDeferredNotifications(org.jetbrains.icons.IconIdentifier,org.jetbrains.icons.Icon,kotlin.coroutines.Continuation):java.lang.Object
+- svgPatcher(kotlin.jvm.functions.Function1):org.jetbrains.icons.patchers.SvgPatcher
+- toNewIcon(javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):org.jetbrains.icons.Icon
+- toSwingIcon(org.jetbrains.icons.Icon,org.jetbrains.icons.scale.IconScale):javax.swing.Icon
+- unitsFactory():org.jetbrains.icons.design.UnitsFactory
+f:org.jetbrains.icons.impl.DefaultIconManager$Companion
+- f:getDefaultManagerInstance():org.jetbrains.icons.impl.DefaultIconManager
+f:org.jetbrains.icons.impl.DefaultLayeredIcon
+- org.jetbrains.icons.Icon
+- sf:Companion:org.jetbrains.icons.impl.DefaultLayeredIcon$Companion
+- <init>(java.util.List):V
+- equals(java.lang.Object):Z
+- f:getLayers():java.util.List
+- hashCode():I
+bf:org.jetbrains.icons.impl.DefaultLayeredIcon$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.DefaultLayeredIcon$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.DefaultLayeredIcon
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.DefaultLayeredIcon):V
+f:org.jetbrains.icons.impl.DefaultLayeredIcon$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.DefaultUnitsFactory
+- sf:INSTANCE:org.jetbrains.icons.impl.DefaultUnitsFactory
+- align(org.jetbrains.icons.design.IconVerticalAlign,org.jetbrains.icons.design.IconHorizontalAlign):org.jetbrains.icons.design.IconAlign
+- circle(org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.design.Circle
+- dp(D):org.jetbrains.icons.design.DisplayPoint
+- factorScale(D):org.jetbrains.icons.scale.FactorScale
+- fillAreaScale(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,Z):org.jetbrains.icons.scale.FillAreaScale
+- fitAreaScale(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,Z):org.jetbrains.icons.scale.FitAreaScale
+- margin(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.design.IconMargin
+- px(I):org.jetbrains.icons.design.Pixel
+- rectangle(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.design.Rectangle
+- sRGB(F,F,F,F):org.jetbrains.icons.design.SRGBColor
+- sRGBHex(java.lang.String):org.jetbrains.icons.design.SRGBColor
+- toAwtColor(org.jetbrains.icons.design.Color):java.awt.Color
+org.jetbrains.icons.impl.DeferredIconEventHandler
+- a:whenDone(org.jetbrains.icons.DeferredIcon,org.jetbrains.icons.Icon):V
+org.jetbrains.icons.impl.DeferredIconResolver
+- a:getDeferredIcon():java.lang.ref.WeakReference
+- a:getId():org.jetbrains.icons.IconIdentifier
+- a:resolve(kotlin.coroutines.Continuation):java.lang.Object
+f:org.jetbrains.icons.impl.IconAnimationFrame
+- sf:Companion:org.jetbrains.icons.impl.IconAnimationFrame$Companion
+- <init>(java.util.List,J):V
+- equals(java.lang.Object):Z
+- f:getDuration():J
+- f:getLayers():java.util.List
+- hashCode():I
+bf:org.jetbrains.icons.impl.IconAnimationFrame$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.IconAnimationFrame$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.IconAnimationFrame
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.IconAnimationFrame):V
+f:org.jetbrains.icons.impl.IconAnimationFrame$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.SerializersBuilderKt
+- sf:iconLayer(kotlinx.serialization.modules.SerializersModuleBuilder,kotlin.reflect.KClass,kotlinx.serialization.KSerializer):V
+- bs:iconLayer$default(kotlinx.serialization.modules.SerializersModuleBuilder,kotlin.reflect.KClass,kotlinx.serialization.KSerializer,I,java.lang.Object):V
+f:org.jetbrains.icons.impl.StringIconIdentifier
+- org.jetbrains.icons.IconIdentifier
+- sf:Companion:org.jetbrains.icons.impl.StringIconIdentifier$Companion
+- <init>(java.lang.String):V
+- equals(java.lang.Object):Z
+- f:getValue():java.lang.String
+- hashCode():I
+bf:org.jetbrains.icons.impl.StringIconIdentifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.StringIconIdentifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.StringIconIdentifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.StringIconIdentifier):V
+f:org.jetbrains.icons.impl.StringIconIdentifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultCircle
+- org.jetbrains.icons.design.Circle
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultCircle$Companion
+- <init>(org.jetbrains.icons.design.IconUnit):V
+- equals(java.lang.Object):Z
+- getRadius():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.design.DefaultCircle$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultCircle$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultCircle
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultCircle):V
+f:org.jetbrains.icons.impl.design.DefaultCircle$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultDisplayPoint
+- org.jetbrains.icons.design.DisplayPoint
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultDisplayPoint$Companion
+- <init>(D):V
+- equals(java.lang.Object):Z
+- getValue():D
+- hashCode():I
+- plus(org.jetbrains.icons.design.DisplayPoint):org.jetbrains.icons.design.DisplayPoint
+- times(I):org.jetbrains.icons.design.IconUnit
+bf:org.jetbrains.icons.impl.design.DefaultDisplayPoint$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultDisplayPoint$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultDisplayPoint
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultDisplayPoint):V
+f:org.jetbrains.icons.impl.design.DefaultDisplayPoint$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultFactorScale
+- org.jetbrains.icons.scale.FactorScale
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultFactorScale$Companion
+- <init>(D):V
+- equals(java.lang.Object):Z
+- getFactor():D
+- hashCode():I
+- toFactor(F,I,I,F):F
+bf:org.jetbrains.icons.impl.design.DefaultFactorScale$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultFactorScale$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultFactorScale
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultFactorScale):V
+f:org.jetbrains.icons.impl.design.DefaultFactorScale$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultFillAreaScale
+- org.jetbrains.icons.scale.FillAreaScale
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultFillAreaScale$Companion
+- <init>(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,Z):V
+- equals(java.lang.Object):Z
+- getHeight():org.jetbrains.icons.design.IconUnit
+- getRelative():Z
+- getWidth():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+- toFactor(F,I,I,F):F
+bf:org.jetbrains.icons.impl.design.DefaultFillAreaScale$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultFillAreaScale$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultFillAreaScale
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultFillAreaScale):V
+f:org.jetbrains.icons.impl.design.DefaultFillAreaScale$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultFitAreaScale
+- org.jetbrains.icons.scale.FitAreaScale
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultFitAreaScale$Companion
+- <init>(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,Z):V
+- equals(java.lang.Object):Z
+- getHeight():org.jetbrains.icons.design.IconUnit
+- getRelative():Z
+- getWidth():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+- toFactor(F,I,I,F):F
+bf:org.jetbrains.icons.impl.design.DefaultFitAreaScale$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultFitAreaScale$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultFitAreaScale
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultFitAreaScale):V
+f:org.jetbrains.icons.impl.design.DefaultFitAreaScale$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultIconAlign
+- org.jetbrains.icons.design.IconAlign
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultIconAlign$Companion
+- <init>(org.jetbrains.icons.design.IconVerticalAlign,org.jetbrains.icons.design.IconHorizontalAlign):V
+- equals(java.lang.Object):Z
+- getHorizontalAlign():org.jetbrains.icons.design.IconHorizontalAlign
+- getVerticalAlign():org.jetbrains.icons.design.IconVerticalAlign
+- hashCode():I
+bf:org.jetbrains.icons.impl.design.DefaultIconAlign$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultIconAlign$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultIconAlign
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultIconAlign):V
+f:org.jetbrains.icons.impl.design.DefaultIconAlign$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultIconAnimationDesigner
+- org.jetbrains.icons.design.IconAnimationDesigner
+- <init>(org.jetbrains.icons.impl.design.DefaultIconDesigner):V
+- f:build():java.util.List
+- frame(J,kotlin.jvm.functions.Function1):V
+- f:getRootDesigner():org.jetbrains.icons.impl.design.DefaultIconDesigner
+a:org.jetbrains.icons.impl.design.DefaultIconDesigner
+- org.jetbrains.icons.design.IconDesigner
+- <init>():V
+- animation(org.jetbrains.icons.modifiers.IconModifier,kotlin.jvm.functions.Function1):V
+- box(org.jetbrains.icons.modifiers.IconModifier,kotlin.jvm.functions.Function1):V
+- f:build():org.jetbrains.icons.impl.DefaultLayeredIcon
+- f:buildLayers():java.util.List
+- column(org.jetbrains.icons.modifiers.IconModifier,kotlin.jvm.functions.Function1):V
+- a:createNestedDesigner():org.jetbrains.icons.impl.design.DefaultIconDesigner
+- pf:getLayers():java.util.List
+- icon(org.jetbrains.icons.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- image(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.modifiers.IconModifier):V
+- row(org.jetbrains.icons.modifiers.IconModifier,kotlin.jvm.functions.Function1):V
+- shape(org.jetbrains.icons.design.Color,org.jetbrains.icons.design.Shape,org.jetbrains.icons.modifiers.IconModifier):V
+- spacer(org.jetbrains.icons.modifiers.IconModifier):V
+f:org.jetbrains.icons.impl.design.DefaultIconMargin
+- org.jetbrains.icons.design.IconMargin
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultIconMargin$Companion
+- <init>(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):V
+- equals(java.lang.Object):Z
+- getBottom():org.jetbrains.icons.design.IconUnit
+- getLeft():org.jetbrains.icons.design.IconUnit
+- getRight():org.jetbrains.icons.design.IconUnit
+- getTop():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.design.DefaultIconMargin$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultIconMargin$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultIconMargin
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultIconMargin):V
+f:org.jetbrains.icons.impl.design.DefaultIconMargin$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultPixel
+- org.jetbrains.icons.design.Pixel
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultPixel$Companion
+- <init>(I):V
+- equals(java.lang.Object):Z
+- getValue():I
+- hashCode():I
+- plus(org.jetbrains.icons.design.Pixel):org.jetbrains.icons.design.Pixel
+- times(I):org.jetbrains.icons.design.IconUnit
+bf:org.jetbrains.icons.impl.design.DefaultPixel$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultPixel$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultPixel
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultPixel):V
+f:org.jetbrains.icons.impl.design.DefaultPixel$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultRectangle
+- org.jetbrains.icons.design.Rectangle
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultRectangle$Companion
+- <init>(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):V
+- equals(java.lang.Object):Z
+- getHeight():org.jetbrains.icons.design.IconUnit
+- getWidth():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.design.DefaultRectangle$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultRectangle$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultRectangle
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultRectangle):V
+f:org.jetbrains.icons.impl.design.DefaultRectangle$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.design.DefaultSRGB
+- org.jetbrains.icons.design.SRGBColor
+- sf:Companion:org.jetbrains.icons.impl.design.DefaultSRGB$Companion
+- <init>(F,F,F,F):V
+- equals(java.lang.Object):Z
+- getAlpha():F
+- getBlue():F
+- getGreen():F
+- getRed():F
+- hashCode():I
+- toHex():java.lang.String
+bf:org.jetbrains.icons.impl.design.DefaultSRGB$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.design.DefaultSRGB$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.design.DefaultSRGB
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.design.DefaultSRGB):V
+f:org.jetbrains.icons.impl.design.DefaultSRGB$Companion
+- f:fromHex(java.lang.String):org.jetbrains.icons.design.SRGBColor
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.filters.DefaultColorFilterFactory
+- sf:INSTANCE:org.jetbrains.icons.impl.filters.DefaultColorFilterFactory
+- tintColor(org.jetbrains.icons.design.Color,org.jetbrains.icons.design.BlendMode):org.jetbrains.icons.filters.ColorFilter
+f:org.jetbrains.icons.impl.filters.TintColorFilter
+- org.jetbrains.icons.filters.ColorFilter
+- sf:Companion:org.jetbrains.icons.impl.filters.TintColorFilter$Companion
+- <init>(org.jetbrains.icons.design.Color,org.jetbrains.icons.design.BlendMode):V
+- b:<init>(org.jetbrains.icons.design.Color,org.jetbrains.icons.design.BlendMode,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- f:getBlendMode():org.jetbrains.icons.design.BlendMode
+- f:getColor():org.jetbrains.icons.design.Color
+bf:org.jetbrains.icons.impl.filters.TintColorFilter$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.filters.TintColorFilter$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.filters.TintColorFilter
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.filters.TintColorFilter):V
+f:org.jetbrains.icons.impl.filters.TintColorFilter$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.AnimatedIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.AnimatedIconLayer$Companion
+- <init>(java.util.List,org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- f:getFrames():java.util.List
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.AnimatedIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.AnimatedIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.AnimatedIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.AnimatedIconLayer):V
+f:org.jetbrains.icons.impl.layers.AnimatedIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.IconLayerConstraints
+- sf:Companion:org.jetbrains.icons.impl.layers.IconLayerConstraints$Companion
+- <init>(org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconMargin,F):V
+- b:<init>(org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconMargin,F,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- equals(java.lang.Object):Z
+- f:getAlign():org.jetbrains.icons.design.IconAlign
+- f:getAlpha():F
+- f:getHeight():org.jetbrains.icons.design.IconUnit
+- f:getMargin():org.jetbrains.icons.design.IconMargin
+- f:getWidth():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.IconLayerConstraints$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.IconLayerConstraints$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.IconLayerConstraints
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.IconLayerConstraints):V
+f:org.jetbrains.icons.impl.layers.IconLayerConstraints$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.ImageIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.ImageIconLayer$Companion
+- <init>(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- f:getLoader():org.jetbrains.icons.ImageResourceLocation
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.ImageIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.ImageIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.ImageIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.ImageIconLayer):V
+f:org.jetbrains.icons.impl.layers.ImageIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.LayoutIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.LayoutIconLayer$Companion
+- <init>(java.util.List,org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection,org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- f:getDirection():org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- f:getNestedLayers():java.util.List
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.LayoutIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.LayoutIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.LayoutIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.LayoutIconLayer):V
+f:org.jetbrains.icons.impl.layers.LayoutIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+e:org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- java.lang.Enum
+- sf:Box:org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- sf:Column:org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- sf:Row:org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- s:getEntries():kotlin.enums.EnumEntries
+- s:valueOf(java.lang.String):org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection
+- s:values():org.jetbrains.icons.impl.layers.LayoutIconLayer$LayoutDirection[]
+f:org.jetbrains.icons.impl.layers.NestedIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.NestedIconLayer$Companion
+- <init>(org.jetbrains.icons.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- f:getIcon():org.jetbrains.icons.Icon
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.NestedIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.NestedIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.NestedIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.NestedIconLayer):V
+f:org.jetbrains.icons.impl.layers.NestedIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.ShapeIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.ShapeIconLayer$Companion
+- <init>(org.jetbrains.icons.design.Color,org.jetbrains.icons.design.Shape,org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- f:getColor():org.jetbrains.icons.design.Color
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- f:getShape():org.jetbrains.icons.design.Shape
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.ShapeIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.ShapeIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.ShapeIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.ShapeIconLayer):V
+f:org.jetbrains.icons.impl.layers.ShapeIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.SpacerIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.SpacerIconLayer$Companion
+- <init>(org.jetbrains.icons.modifiers.IconModifier):V
+- equals(java.lang.Object):Z
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.layers.SpacerIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.SpacerIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.SpacerIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.SpacerIconLayer):V
+f:org.jetbrains.icons.impl.layers.SpacerIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.layers.SwingIconLayer
+- org.jetbrains.icons.layers.IconLayer
+- sf:Companion:org.jetbrains.icons.impl.layers.SwingIconLayer$Companion
+- <init>(javax.swing.Icon,org.jetbrains.icons.modifiers.IconModifier):V
+- f:getLegacyIcon():javax.swing.Icon
+- getModifier():org.jetbrains.icons.modifiers.IconModifier
+bf:org.jetbrains.icons.impl.layers.SwingIconLayer$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.layers.SwingIconLayer$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.layers.SwingIconLayer
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.layers.SwingIconLayer):V
+f:org.jetbrains.icons.impl.layers.SwingIconLayer$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.AlignIconModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.AlignIconModifier$Companion
+- <init>(org.jetbrains.icons.design.IconAlign):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getAlign():org.jetbrains.icons.design.IconAlign
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.AlignIconModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.AlignIconModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.AlignIconModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.AlignIconModifier):V
+f:org.jetbrains.icons.impl.modifiers.AlignIconModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.AlphaIconModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.AlphaIconModifier$Companion
+- <init>(F):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getAlpha():F
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.AlphaIconModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.AlphaIconModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.AlphaIconModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.AlphaIconModifier):V
+f:org.jetbrains.icons.impl.modifiers.AlphaIconModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- org.jetbrains.icons.modifiers.IconModifier
+- a:applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+f:org.jetbrains.icons.impl.modifiers.ColorFilterModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.ColorFilterModifier$Companion
+- <init>(org.jetbrains.icons.filters.ColorFilter):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getColorFilter():org.jetbrains.icons.filters.ColorFilter
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.ColorFilterModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.ColorFilterModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.ColorFilterModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.ColorFilterModifier):V
+f:org.jetbrains.icons.impl.modifiers.ColorFilterModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.CombinedIconModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.CombinedIconModifier$Companion
+- <init>(org.jetbrains.icons.impl.modifiers.ApplyableIconModifier,org.jetbrains.icons.impl.modifiers.ApplyableIconModifier):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getOther():org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- f:getRoot():org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.CombinedIconModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.CombinedIconModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.CombinedIconModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.CombinedIconModifier):V
+f:org.jetbrains.icons.impl.modifiers.CombinedIconModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.CutoutMarginModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.CutoutMarginModifier$Companion
+- <init>(org.jetbrains.icons.design.IconUnit):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getSize():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.CutoutMarginModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.CutoutMarginModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.CutoutMarginModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.CutoutMarginModifier):V
+f:org.jetbrains.icons.impl.modifiers.CutoutMarginModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.DefaultModifiersFactory
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.DefaultModifiersFactory
+- align(org.jetbrains.icons.design.IconAlign):org.jetbrains.icons.modifiers.IconModifier
+- alpha(F):org.jetbrains.icons.modifiers.IconModifier
+- colorFilter(org.jetbrains.icons.filters.ColorFilter):org.jetbrains.icons.modifiers.IconModifier
+- combine(org.jetbrains.icons.modifiers.IconModifier,org.jetbrains.icons.modifiers.IconModifier):org.jetbrains.icons.modifiers.IconModifier
+- cutoutMargin(org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.modifiers.IconModifier
+- margin(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.modifiers.IconModifier
+- patchSvg(org.jetbrains.icons.patchers.SvgPatcher):org.jetbrains.icons.modifiers.IconModifier
+- scale(org.jetbrains.icons.scale.IconScale):org.jetbrains.icons.modifiers.IconModifier
+- stroke(org.jetbrains.icons.design.Color):org.jetbrains.icons.modifiers.IconModifier
+f:org.jetbrains.icons.impl.modifiers.IconModifierKt
+- sf:asFractionalPixels(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.rendering.ScalingContext,F):F
+- bs:asFractionalPixels$default(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.rendering.ScalingContext,F,I,java.lang.Object):F
+- sf:asPixels(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.rendering.ScalingContext,F):I
+- bs:asPixels$default(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.rendering.ScalingContext,F,I,java.lang.Object):I
+f:org.jetbrains.icons.impl.modifiers.MarginIconModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.MarginIconModifier$Companion
+- <init>(org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.IconUnit):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getBottom():org.jetbrains.icons.design.IconUnit
+- f:getLeft():org.jetbrains.icons.design.IconUnit
+- f:getRight():org.jetbrains.icons.design.IconUnit
+- f:getTop():org.jetbrains.icons.design.IconUnit
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.MarginIconModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.MarginIconModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.MarginIconModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.MarginIconModifier):V
+f:org.jetbrains.icons.impl.modifiers.MarginIconModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.RootIconModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.RootIconModifier
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.ScaleModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.ScaleModifier$Companion
+- <init>(org.jetbrains.icons.scale.IconScale):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getScale():org.jetbrains.icons.scale.IconScale
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.ScaleModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.ScaleModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.ScaleModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.ScaleModifier):V
+f:org.jetbrains.icons.impl.modifiers.ScaleModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.StrokeModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.StrokeModifier$Companion
+- <init>(org.jetbrains.icons.design.Color):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getColor():org.jetbrains.icons.design.Color
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.StrokeModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.StrokeModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.StrokeModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.StrokeModifier):V
+f:org.jetbrains.icons.impl.modifiers.StrokeModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.modifiers.SvgPatcherModifier
+- org.jetbrains.icons.impl.modifiers.ApplyableIconModifier
+- sf:Companion:org.jetbrains.icons.impl.modifiers.SvgPatcherModifier$Companion
+- <init>(org.jetbrains.icons.impl.patchers.DefaultSvgPatcher):V
+- applyTo(org.jetbrains.icons.impl.rendering.layers.LayerLayout):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- equals(java.lang.Object):Z
+- f:getSvgPatcher():org.jetbrains.icons.impl.patchers.DefaultSvgPatcher
+- hashCode():I
+bf:org.jetbrains.icons.impl.modifiers.SvgPatcherModifier$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.modifiers.SvgPatcherModifier$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.modifiers.SvgPatcherModifier
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.modifiers.SvgPatcherModifier):V
+f:org.jetbrains.icons.impl.modifiers.SvgPatcherModifier$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.patchers.DefaultSvgPatcher
+- org.jetbrains.icons.patchers.SvgPatcher
+- sf:Companion:org.jetbrains.icons.impl.patchers.DefaultSvgPatcher$Companion
+- <init>(java.util.List,java.util.List):V
+- combineWith(org.jetbrains.icons.patchers.SvgPatcher):org.jetbrains.icons.patchers.SvgPatcher
+- equals(java.lang.Object):Z
+- f:getFilteredOperations():java.util.List
+- f:getOperations():java.util.List
+- hashCode():I
+bf:org.jetbrains.icons.impl.patchers.DefaultSvgPatcher$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.patchers.DefaultSvgPatcher$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.patchers.DefaultSvgPatcher
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.patchers.DefaultSvgPatcher):V
+f:org.jetbrains.icons.impl.patchers.DefaultSvgPatcher$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.patchers.DefaultSvgPatcherDesigner
+- org.jetbrains.icons.design.SvgPatcherDesigner
+- <init>():V
+- add(java.lang.String,java.lang.String):V
+- filter(java.lang.String,kotlin.jvm.functions.Function1):V
+- remove(java.lang.String):V
+- removeIfMatches(java.lang.String,java.lang.String):V
+- removeUnlessMatches(java.lang.String,java.lang.String):V
+- replace(java.lang.String,java.lang.String):V
+- replaceIfMatches(java.lang.String,java.lang.String,java.lang.String):V
+- replaceUnlessMatches(java.lang.String,java.lang.String,java.lang.String):V
+- set(java.lang.String,java.lang.String):V
+f:org.jetbrains.icons.impl.patchers.SvgPatchOperation
+- sf:Companion:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Companion
+- <init>(java.lang.String,java.lang.String,Z,Z,java.lang.String,org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation):V
+- equals(java.lang.Object):Z
+- f:getAttributeName():java.lang.String
+- f:getConditional():Z
+- f:getExpectedValue():java.lang.String
+- f:getNegatedCondition():Z
+- f:getOperation():org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- f:getValue():java.lang.String
+- hashCode():I
+bf:org.jetbrains.icons.impl.patchers.SvgPatchOperation$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.patchers.SvgPatchOperation$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.patchers.SvgPatchOperation
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.patchers.SvgPatchOperation):V
+f:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+e:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- java.lang.Enum
+- sf:Add:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- sf:Companion:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation$Companion
+- sf:Remove:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- sf:Replace:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- sf:Set:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- s:getEntries():kotlin.enums.EnumEntries
+- s:valueOf(java.lang.String):org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation
+- s:values():org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation[]
+f:org.jetbrains.icons.impl.patchers.SvgPatchOperation$Operation$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+f:org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations
+- sf:Companion:org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations$Companion
+- <init>(java.lang.String,java.util.List):V
+- equals(java.lang.Object):Z
+- f:getOperations():java.util.List
+- f:getPath():java.lang.String
+- hashCode():I
+bf:org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations$$serializer
+- kotlinx.serialization.internal.GeneratedSerializer
+- sf:INSTANCE:org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations$$serializer
+- f:childSerializers():kotlinx.serialization.KSerializer[]
+- f:deserialize(kotlinx.serialization.encoding.Decoder):org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations
+- f:getDescriptor():kotlinx.serialization.descriptors.SerialDescriptor
+- f:serialize(kotlinx.serialization.encoding.Encoder,org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations):V
+f:org.jetbrains.icons.impl.patchers.SvgPathFilteredOperations$Companion
+- f:serializer():kotlinx.serialization.KSerializer
+c:org.jetbrains.icons.impl.rendering.CachedGPUImageResourceHolder
+- <init>():V
+- getOrGenerateBitmap(kotlin.reflect.KClass,kotlin.jvm.functions.Function0):java.lang.Object
+f:org.jetbrains.icons.impl.rendering.CoroutineBasedMutableIconUpdateFlow
+- org.jetbrains.icons.impl.rendering.MutableIconUpdateFlowBase
+- <init>(kotlinx.coroutines.CoroutineScope,kotlin.jvm.functions.Function1):V
+- collectDynamic(kotlinx.coroutines.flow.Flow,kotlin.jvm.functions.Function1):V
+f:org.jetbrains.icons.impl.rendering.DefaultIconRenderer
+- org.jetbrains.icons.rendering.IconRenderer
+- <init>(org.jetbrains.icons.impl.DefaultLayeredIcon,org.jetbrains.icons.rendering.RenderingContext):V
+- calculateUsedDimensions(org.jetbrains.icons.rendering.ScalingContext):org.jetbrains.icons.rendering.Dimensions
+- getIcon():org.jetbrains.icons.Icon
+- f:getIconInstance():org.jetbrains.icons.impl.DefaultLayeredIcon
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+a:org.jetbrains.icons.impl.rendering.DefaultIconRendererManager
+- org.jetbrains.icons.impl.rendering.layers.IconLayerManager
+- org.jetbrains.icons.rendering.IconRendererManager
+- <init>():V
+- createRenderer(org.jetbrains.icons.Icon,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.rendering.IconRenderer
+- createRenderer(org.jetbrains.icons.layers.IconLayer,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- pf:createRendererOrNull(org.jetbrains.icons.Icon,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.rendering.IconRenderer
+f:org.jetbrains.icons.impl.rendering.DefaultImageModifiers
+- org.jetbrains.icons.rendering.ImageModifiers
+- <init>():V
+- <init>(org.jetbrains.icons.filters.ColorFilter,org.jetbrains.icons.impl.patchers.DefaultSvgPatcher,Z,org.jetbrains.icons.design.Color):V
+- b:<init>(org.jetbrains.icons.filters.ColorFilter,org.jetbrains.icons.impl.patchers.DefaultSvgPatcher,Z,org.jetbrains.icons.design.Color,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- equals(java.lang.Object):Z
+- getColorFilter():org.jetbrains.icons.filters.ColorFilter
+- f:getStroke():org.jetbrains.icons.design.Color
+- getSvgPatcher():org.jetbrains.icons.impl.patchers.DefaultSvgPatcher
+- hashCode():I
+- f:isDark():Z
+a:org.jetbrains.icons.impl.rendering.DefaultImageResourceProvider
+- <init>():V
+- a:fromSwingIcon(javax.swing.Icon,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+- bs:fromSwingIcon$default(org.jetbrains.icons.impl.rendering.DefaultImageResourceProvider,javax.swing.Icon,org.jetbrains.icons.rendering.ImageModifiers,I,java.lang.Object):org.jetbrains.icons.rendering.ImageResource
+f:org.jetbrains.icons.impl.rendering.DefaultRenderingContext
+- org.jetbrains.icons.rendering.RenderingContext
+- <init>(org.jetbrains.icons.rendering.MutableIconUpdateFlow,org.jetbrains.icons.impl.rendering.DefaultImageModifiers,org.jetbrains.icons.rendering.ImageResourceProvider):V
+- f:adjustTo(org.jetbrains.icons.layers.IconLayer):org.jetbrains.icons.impl.rendering.DefaultRenderingContext
+- getDefaultImageModifiers():org.jetbrains.icons.impl.rendering.DefaultImageModifiers
+- f:getImageResourceProvider():org.jetbrains.icons.rendering.ImageResourceProvider
+- getUpdateFlow():org.jetbrains.icons.rendering.MutableIconUpdateFlow
+- imageResource(org.jetbrains.icons.ImageResourceLocation,org.jetbrains.icons.rendering.ImageModifiers):org.jetbrains.icons.rendering.ImageResource
+f:org.jetbrains.icons.impl.rendering.DefaultScalingContext
+- <init>(F,F):V
+- equals(java.lang.Object):Z
+- getContextScale():F
+- getDisplayDensity():F
+- hashCode():I
+a:org.jetbrains.icons.impl.rendering.MutableIconUpdateFlowBase
+- kotlinx.coroutines.flow.Flow
+- <init>(kotlin.jvm.functions.Function1):V
+- collect(kotlinx.coroutines.flow.FlowCollector,kotlin.coroutines.Continuation):java.lang.Object
+- pa:emitDelayed(kotlinx.coroutines.flow.MutableSharedFlow,J,I):V
+- pf:getMinimalUpdateMillis():J
+- pf:getStopwatch():J
+- pf:getUpdateCallback():kotlin.jvm.functions.Function1
+- pf:handleRateLimiting():Z
+- pf:setStopwatch(J):V
+- triggerDelayedUpdate(J):V
+- triggerUpdate():V
+f:org.jetbrains.icons.impl.rendering.ResolvedScalingContext
+- <init>(org.jetbrains.icons.rendering.Dimensions,org.jetbrains.icons.rendering.ScalingContext):V
+- f:getContext():org.jetbrains.icons.rendering.ScalingContext
+- f:getFinalDimensions():org.jetbrains.icons.rendering.Dimensions
+f:org.jetbrains.icons.impl.rendering.ScalingKt
+- sf:resolve(org.jetbrains.icons.rendering.IconRenderer,F,org.jetbrains.icons.scale.IconScale):org.jetbrains.icons.impl.rendering.ResolvedScalingContext
+f:org.jetbrains.icons.impl.rendering.layers.AnimatedIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.AnimatedIconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):V
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+a:org.jetbrains.icons.impl.rendering.layers.BaseImageIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>():V
+- pf:applyLayout(org.jetbrains.icons.rendering.ImageResource):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- a:getImage():org.jetbrains.icons.rendering.ImageResource
+- a:getLayer():org.jetbrains.icons.layers.IconLayer
+- pa:getRenderingContext():org.jetbrains.icons.impl.rendering.DefaultRenderingContext
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+- a:setImage(org.jetbrains.icons.rendering.ImageResource):V
+f:org.jetbrains.icons.impl.rendering.layers.CompoundDimensions
+- <init>(org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize):V
+- f:asPixels(org.jetbrains.icons.rendering.ScalingContext):org.jetbrains.icons.rendering.Dimensions
+- f:getHeight():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getWidth():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+f:org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- <init>(org.jetbrains.icons.design.Pixel,org.jetbrains.icons.design.DisplayPoint,java.util.List,java.util.List,F):V
+- b:<init>(org.jetbrains.icons.design.Pixel,org.jetbrains.icons.design.DisplayPoint,java.util.List,java.util.List,F,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- f:asPixels(org.jetbrains.icons.rendering.ScalingContext,F):I
+- bs:asPixels$default(org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.rendering.ScalingContext,F,I,java.lang.Object):I
+- f:getDp():org.jetbrains.icons.design.DisplayPoint
+- f:getMultiplier():F
+- f:getNestedCompounds():java.util.List
+- f:getPickMaxSet():java.util.List
+- f:getPixels():org.jetbrains.icons.design.Pixel
+- f:plus(org.jetbrains.icons.impl.rendering.layers.CompoundSize):org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:times(D):org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:times(F):org.jetbrains.icons.impl.rendering.layers.CompoundSize
+org.jetbrains.icons.impl.rendering.layers.IconLayerManager
+- sf:Companion:org.jetbrains.icons.impl.rendering.layers.IconLayerManager$Companion
+- a:createRenderer(org.jetbrains.icons.layers.IconLayer,org.jetbrains.icons.rendering.RenderingContext):org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- s:getInstance():org.jetbrains.icons.impl.rendering.layers.IconLayerManager
+f:org.jetbrains.icons.impl.rendering.layers.IconLayerManager$Companion
+- f:createRenderers(java.util.List,org.jetbrains.icons.rendering.RenderingContext):java.util.List
+- f:getInstance():org.jetbrains.icons.impl.rendering.layers.IconLayerManager
+- f:setInstance(org.jetbrains.icons.impl.rendering.layers.IconLayerManager):V
+org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- applyLayout(org.jetbrains.icons.modifiers.IconModifier,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- a:getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- a:render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+f:org.jetbrains.icons.impl.rendering.layers.ImageIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.BaseImageIconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.ImageIconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):V
+- getImage():org.jetbrains.icons.rendering.ImageResource
+- getLayer():org.jetbrains.icons.impl.layers.ImageIconLayer
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- setImage(org.jetbrains.icons.rendering.ImageResource):V
+- setLayout(org.jetbrains.icons.impl.rendering.layers.LayerLayout):V
+f:org.jetbrains.icons.impl.rendering.layers.LayerHelpersKt
+- sf:applyTo(org.jetbrains.icons.rendering.ScalingContext,D):I
+- sf:applyTo(org.jetbrains.icons.rendering.ScalingContext,I):I
+- sf:applyTo(org.jetbrains.icons.rendering.ScalingContext,java.lang.Integer):java.lang.Integer
+- sf:generateImageModifiers(org.jetbrains.icons.layers.IconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):org.jetbrains.icons.impl.rendering.DefaultImageModifiers
+- bs:generateImageModifiers$default(org.jetbrains.icons.layers.IconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext,I,java.lang.Object):org.jetbrains.icons.impl.rendering.DefaultImageModifiers
+c:org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- <init>(org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.filters.ColorFilter,F,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.Color,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.scale.IconScale):V
+- b:<init>(org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.filters.ColorFilter,F,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.Color,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.scale.IconScale,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- f:consumedSpace():org.jetbrains.icons.impl.rendering.layers.CompoundDimensions
+- f:consumedSpace(org.jetbrains.icons.rendering.ScalingContext):org.jetbrains.icons.rendering.Dimensions
+- f:copy(org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.filters.ColorFilter,F,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.Color,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.scale.IconScale):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- bs:copy$default(org.jetbrains.icons.impl.rendering.layers.LayerLayout,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.impl.rendering.layers.CompoundSize,org.jetbrains.icons.filters.ColorFilter,F,org.jetbrains.icons.design.IconUnit,org.jetbrains.icons.design.Color,org.jetbrains.icons.design.IconAlign,org.jetbrains.icons.scale.IconScale,I,java.lang.Object):org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- f:getAlign():org.jetbrains.icons.design.IconAlign
+- f:getAlpha():F
+- f:getBottomMargin():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getColorFilter():org.jetbrains.icons.filters.ColorFilter
+- f:getCutoutMargin():org.jetbrains.icons.design.IconUnit
+- f:getHeight():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getLeftMargin():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getRightMargin():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getScale():org.jetbrains.icons.scale.IconScale
+- f:getStroke():org.jetbrains.icons.design.Color
+- f:getTopMargin():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:getWidth():org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- f:placement(org.jetbrains.icons.rendering.LayerPaintingContext):org.jetbrains.icons.impl.rendering.layers.Placement
+f:org.jetbrains.icons.impl.rendering.layers.LayerLayoutKt
+- sf:compoundHeightSumWidthMax(java.util.List,kotlin.jvm.functions.Function1):org.jetbrains.icons.impl.rendering.layers.CompoundDimensions
+- sf:compoundSize(org.jetbrains.icons.design.IconUnit):org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- sf:compoundWidthSumHeightMax(java.util.List,kotlin.jvm.functions.Function1):org.jetbrains.icons.impl.rendering.layers.CompoundDimensions
+- sf:maxCompoundSize(java.util.List):org.jetbrains.icons.impl.rendering.layers.CompoundSize
+- sf:maxCompoundSize(java.util.List,kotlin.jvm.functions.Function1):org.jetbrains.icons.impl.rendering.layers.CompoundDimensions
+f:org.jetbrains.icons.impl.rendering.layers.LayoutIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.LayoutIconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):V
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+f:org.jetbrains.icons.impl.rendering.layers.NestedIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.NestedIconLayer,org.jetbrains.icons.impl.rendering.DefaultRenderingContext):V
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+f:org.jetbrains.icons.impl.rendering.layers.Placement
+- <init>(org.jetbrains.icons.rendering.Bounds,F):V
+- b:<init>(org.jetbrains.icons.rendering.Bounds,F,I,kotlin.jvm.internal.DefaultConstructorMarker):V
+- f:getBounds():org.jetbrains.icons.rendering.Bounds
+- f:getScale():F
+f:org.jetbrains.icons.impl.rendering.layers.ShapeIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.ShapeIconLayer,org.jetbrains.icons.rendering.RenderingContext):V
+- f:getLayer():org.jetbrains.icons.impl.layers.ShapeIconLayer
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- f:getRenderingContext():org.jetbrains.icons.rendering.RenderingContext
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V
+f:org.jetbrains.icons.impl.rendering.layers.SpacerIconLayerRenderer
+- org.jetbrains.icons.impl.rendering.layers.IconLayerRenderer
+- <init>(org.jetbrains.icons.impl.layers.SpacerIconLayer,org.jetbrains.icons.rendering.RenderingContext):V
+- getLayout():org.jetbrains.icons.impl.rendering.layers.LayerLayout
+- render(org.jetbrains.icons.rendering.LayerPaintingContext):V

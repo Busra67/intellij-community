@@ -1,4 +1,4 @@
-name: Gradle Wrappers Validation
+workflow_dispatchname: Gradle Wrappers Validation
 on:
   push:
     branches:
